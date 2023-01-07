@@ -15,9 +15,11 @@
 // const PORT = "8080";
 // PORT = "123"; //error, but onl works for primitives
 
-const arr = ["a", "b", "c"];
-arr.push("!");
-arr[0] = "JS"; //works like let
-console.log(arr); //no error! it changes the array!
+// const arr = ["a", "b", "c"];
+// arr.push("!");
+// arr[0] = "JS"; //works like let
+// console.log(arr); //no error! it changes the array!
 
 //same works for objects
+
+console.log(Object.is(NaN, NaN));
