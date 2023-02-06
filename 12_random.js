@@ -21,8 +21,23 @@
 //     setTimeout(closuredFunc(i), 1000);
 // }
 
-setTimeout(function () {
-    return function () {
-        console.log('hey!');
-    };
-}, 1500);
+// setTimeout(function () {
+//     return function () {
+//         console.log('hey!');
+//     };
+// }, 1500);
+
+// console.log(
+//     (function sum() {
+//         return 'sum!';
+//     })()
+// );
+
+// const dum = function () {
+//     console.log('dum');
+// };
+
+// const functionArray = [];
+// functionArray.push(dum);
+
+// console.log(functionArray);
