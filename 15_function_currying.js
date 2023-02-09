@@ -13,4 +13,4 @@ function sum(a) {
   return calculate;
 }
 
-console.log(sum(1)(2)(3).showResult());
+console.log(sum(5)(9)(-4)(1).showResult());
