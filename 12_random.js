@@ -41,3 +41,27 @@
 // functionArray.push(dum);
 
 // console.log(functionArray);
+
+// setTimeout(function () {
+//     return function () {
+//         console.log(this);
+//     };
+// }, 1500);
+
+//PRIVATE MEMBERS
+
+// function ConstructorCar(initValue) {
+//     this.publicMember = initValue;
+//     let _privateMember = initValue; //private member
+//     this.getPrivateMember = function () {
+//         return _privateMember;
+//     };
+//     this.setPrivateMember = function (v) {
+//         _privateMember = v;
+//     };
+// }
+
+// const car = new ConstructorCar(100);
+// console.log(car.getPrivateMember());
+// car.setPrivateMember(300);
+// console.log(car.getPrivateMember());
