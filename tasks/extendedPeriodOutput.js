@@ -20,4 +20,4 @@ function extendedPeriodOutput(period) {
     extendedPeriodOutput(period);
   }, period);
 }
-extendedPeriodOutput(100);
+extendedPeriodOutput(200);
