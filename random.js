@@ -30,21 +30,38 @@
 
 //
 
-function Animal() {
-  isAnimal = true;
-}
-
-Animal.prototype.isAnimal = true;
-
-// class Cat extends Animal {
-//   isCat = true;
+// function Animal() {
+//   isAnimal = true;
 // }
 
-console.log(Animal.prototype);
+// Animal.prototype.isAnimal = true;
 
-const Cat = function () {};
-Cat.prototype = Animal.prototype;
+// // class Cat extends Animal {
+// //   isCat = true;
+// // }
 
-const kitty = new Cat();
+// console.log(Animal.prototype);
 
-console.log(kitty.isAnimal);
+// const Cat = function () {};
+// Cat.prototype = Animal.prototype;
+
+// const kitty = new Cat();
+
+// console.log(kitty.isAnimal);
+
+const limitlessCurrying = (a) => {
+  let currentResult = a;
+
+  let calculate = (b) => {
+    currentResult += b;
+    return calculate;
+  };
+
+  calculate.showResult = () => {
+    console.log(currentResult);
+  };
+
+  return calculate;
+};
+
+limitlessCurrying(10)(1)(1)(1)(1).showResult();
