@@ -1,20 +1,41 @@
-//THIS IN ARROW AND REGULAR FUNCTIONS
+// THIS IN ARROW AND REGULAR FUNCTIONS
 
-// const obj = {
-//   name: '1',
-//   nestedObj: {
+// class obj {
+//   name = '1';
+//   nestedObj = {
 //     name: '2',
-//     sayName: function () {
-
-//       console.log('here');
+//     sayName: () => {
 //       console.log(this.name);
 //     },
-//   },
-//   sayName: function () {
-//     this.nestedObj.sayName.call(obj);
-//   },
-// };
+//   };
+//   sayName = function () {
+//     this.nestedObj.sayName();
+//   };
+// }
 
-// obj.sayName();
+// const objectInstance = new obj();
 
-//call, apply, and bind don't work in arrow functions
+// objectInstance.sayName();
+
+const obj = {
+  name: '1',
+  nestedObj: {
+    name: '2',
+    sayName: () => {
+      console.log(this.name);
+    },
+  },
+  sayName: function () {
+    this.nestedObj.sayName();
+  },
+};
+
+obj.sayName();
+
+//!!---!!
+
+//!!logs undefined BECAUSE the execution context is the GLOBAL object. When we use Classes, we use new and (), so the arrow function captures that execution context!
+
+//!!---!!
+
+// call, apply, and bind don't work in arrow functions
