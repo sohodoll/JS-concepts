@@ -65,3 +65,34 @@
 // console.log(car.getPrivateMember());
 // car.setPrivateMember(300);
 // console.log(car.getPrivateMember());
+
+//
+
+// const sortUnevenNumbers = (arr) => {
+//   let current = undefined
+
+//   arr.forEach(num => {
+//     if (num % 2 !== 0) {
+//         if (current == undefined) {
+//             current = num
+//         }
+//         else {
+//             if (current )
+//         }
+//     }
+//   })
+
+//   return arr
+// }
+
+// console.log(sortUnevenNumbers([7, 3, 4, 9, 5, 2, 17]))
+
+// let x = 5
+
+// console.log(x++ * 2) // 10
+// console.log(x) // 6
+
+// let y = 5
+
+// console.log(++y * 2) // 12
+// console.log(y) // 6
